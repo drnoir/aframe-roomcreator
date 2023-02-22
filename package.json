@@ -1,8 +1,8 @@
 {
   "name": "aframe-roomcreator",
-  "version": "1.0.0",
-  "description": "A basic map editor and exporter and A-Frame component for building rooms and block based enviroments - edit maps with the map editing tool, export to json and then use A-Frame to render them via a componenet ",
-  "main": "room.js",
+  "version": "1.2.0",
+  "description": "A basic A-Frame component for building rooms and block based enviroments - edit maps with the map editing tool, export to json and then use A-Frame to render them via a componenet ",
+  "main": "dist/room.js",
   "scripts": {
     "test": "test"
   },
@@ -35,5 +35,9 @@
   "bugs": {
     "url": "https://github.com/drnoir/aframe-roomcreator/issues"
   },
-  "homepage": "https://github.com/drnoir/aframe-roomcreator#readme"
+  "homepage": "https://github.com/drnoir/aframe-roomcreator#readme",
+  "dependencies": {
+    "aframe": "^1.4.1",
+    "aframe-extras": "^6.1.1"
+  }
 }
