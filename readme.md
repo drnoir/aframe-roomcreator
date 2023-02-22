@@ -36,7 +36,7 @@ A A-Frame component for rendering rooms and block based enviroments
 ![alt text](https://raw.githubusercontent.com/drnoir/A-Frame_RoomCreator/master/editor.jpg?raw=true)
 
 ### How to create a room with the map editor
-Visit : https://drnoir.github.io/A-Frame_RoomCreator/examples/VRRooms.html
+Visit : https://drnoir.github.io/A-Frame_RoomCreator/Tools/MapEditor/ 
 
 This is a simple free app for creating maps to export as json for use by the component.
 You can add walls, 1/2 walls and 1/3 walls and toggle delete mode to delete walls you've added. 
