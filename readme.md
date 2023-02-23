@@ -3,27 +3,27 @@ By Chris Godber (DrNoir GH)
 
 ![alt text](https://github.com/drnoir/A-Frame_RoomCreator/blob/master/roomcomponent.jpg?raw=true)
 
-
 If you like using this component please consider donating to me to support future work on open source tools by clicking this link:
 https://www.buymeacoffee.com/noirnerd
 
-Room maker componenet for AFrame
+## Room maker componenet for AFrame
 
-Room building pattern based on 
-https://hacks.mozilla.org/2017/09/i-built-something-with-a-frame-in-2-days-and-you-can-too/ by 
-Dan Brown @slightlyoffbeat / https://www.danvswild.com/
+Room building pattern based on https://hacks.mozilla.org/2017/09/i-built-something-with-a-frame-in-2-days-and-you-can-too/ by Dan Brown @slightlyoffbeat / https://www.danvswild.com/
 
-### Try it Out
+### Install
 
-### Component Demos
+Install the npm package with the following command
 
+```
+npm install aframe-roomcreator 
+```
+
+### Component Demos:
 #### Standard: 
 - https://drnoir.github.io/A-Frame_RoomCreator/examples/standard.html
-
 #### For VR (Under dev / BETA):
 - https://drnoir.github.io/A-Frame_RoomCreator/examples/VRRooms.html
-
-#### Map Editor (under Tools)
+#### Map Editor (under Tools - USE FOR CREATING NEW MAPS)
 https://drnoir.github.io/A-Frame_RoomCreator/Tools/MapEditor/
 
 ### Purpose:
@@ -57,19 +57,22 @@ Create a json file in following format or simply copy and paste map.json in dist
 
 Copy exported array from map editor and replace "data" with your exported array
 
+```
     {
     "data": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,1,0,0,0,1,1,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,1,1,1,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
     "height": 25,
     "width": 25
     }
+```
 
-There is also a YouTube tutorial on map exporting and importing here - Tutorial on importing maps (Ver 1.0.0) on YouTube here - https://youtu.be/_lUWkL84bjA
+There is also a YouTube tutorial on map exporting and importing here - Tutorial on importing maps (Ver 1.0.0) on YouTube here - https://youtu.be/_lUWkL84bjA . There will likely be a further tutorial soon specific to the NPM package.
 
 ### Component Schema
 The modifiable schema - you can pass values and modify the following values - 
 To add a custom map - add mapToLoad with the name of the JSON file containing the map data you exported before.
-You can add as many rooms as you want. This will load the map data and other metadata from the JSON, expecting the format as above
+You can add as many rooms as you want. This will load the map data and other metadata from the JSON, expecting the format as above.
 
+```
     wallColor: {type: 'string', default: 'white'},
     floorColor: {type: 'string', default: 'white'},
     wallTexture: {type: 'string', default: 'none'},
@@ -81,28 +84,28 @@ You can add as many rooms as you want. This will load the map data and other met
     mapToLoad: {type:'string', default: 'map'},
     mapSource: {type:'array', default:[]}
     indoor: {type:'boolean', default:false}
+```
 
-### Typical Example of using the Room Component
+### How to use in AFrame 
 An example of two entities using the room component to generate two separate maps, as show in the examples in 
-the examples above. To pass custom textures, you must also load the textures into A-frame assets and pass the component
-the ID of the asset. 
+the examples above. To pass custom textures, you must also load the textures into A-frame assets as you would normally and pass the component the ID of the asset you want to use.
 
-Install the npm package with the following command
+This will install roomcreator componenet so you can use it in your project.
+mapToLoad is a reference to the json you generate for each map / room. Without this reference nothing will load.
+If no custum values are passed to the componenet it will load the defaults as detailed in the schema above.
 
---
-npm install aframe-roomcreator 
---
-
-This will install roomcreator componenet so you can use it in your project
-
-    <!-- rooms component examples with some customisation -->
+```
+    <!--rooms component examples with some customisation -->
      <a-entity id ="room" room="mapToLoad:mapTest; wallColor:red; wallTexture:brick;"></a-entity>
      <a-entity id ="room2"  position ='0 0 -30' room="mapToLoad:mapTest2; wallColor:green; wallTexture:brick;"></a-entity>
+```
 
 #### PLEASE NOTE: 
-Maps must be in the same directory as the entry point for your scene
+Maps must be in the same directory as your AFrame scene.
 
 ### Version Changes
+- 1.3.1 - Improved readability of Documentation
+- 1.3.0 - Readme documentaion updates 
 - 1.2.0 - NPM version of component lib with MapEditor for dev / local building of maps 
 - 1.1.0 - Updated UI and bugfixes
 - 1.0 initial Release

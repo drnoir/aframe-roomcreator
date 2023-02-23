@@ -1,6 +1,6 @@
 {
   "name": "aframe-roomcreator",
-  "version": "1.2.0",
+  "version": "1.3.1",
   "description": "A basic A-Frame component for building rooms and block based enviroments - edit maps with the map editing tool, export to json and then use A-Frame to render them via a componenet ",
   "main": "dist/room.js",
   "scripts": {
