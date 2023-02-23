@@ -3,6 +3,10 @@ By Chris Godber (DrNoir GH)
 
 ![alt text](https://github.com/drnoir/A-Frame_RoomCreator/blob/master/roomcomponent.jpg?raw=true)
 
+
+If you like using this component please consider donating to me to support future work on open source tools by clicking this link:
+https://www.buymeacoffee.com/noirnerd
+
 Room maker componenet for AFrame
 
 Room building pattern based on 

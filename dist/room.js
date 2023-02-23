@@ -72,7 +72,6 @@ AFRAME.registerComponent('room', {
                     wall.setAttribute('static-body', '');
                     wall.setAttribute('material', 'src:#' + wallTexture);
                     this.el.appendChild(wall);
-
                     if (indoor) {
                         let roof = document.createElement('a-box');
                         roof.setAttribute('color', floorColor);
@@ -89,7 +88,6 @@ AFRAME.registerComponent('room', {
                         wall.setAttribute('position', floorPos);
                         wall.setAttribute('material', 'src:#' + floorTexture);
                         wall.setAttribute('playermovement', '');
-
                     }
                     // full height wall
                     if (mapSource.data[i] === 1) {
